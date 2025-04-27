@@ -1,0 +1,8 @@
+torch
+torchvision
+Pillow
+numpy
+opencv-python
+uvicorn
+python-multipart
+grad-cam
