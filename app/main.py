@@ -21,7 +21,7 @@ from pytorch_grad_cam.utils.image import show_cam_on_image
 from model_definition import AttentionTransformer, load_model
 
 # --- Configuration ---
-MODEL_PATH = "../model_files/liver_fibrosis_model_efficientnet_attention.pth" # Path to your model weights
+MODEL_PATH = "G:\AI_ML project workshop\liver fibrosis app\model_files\liver_fibrosis_model_efficientnet_attention.pth" # Path to your model weights
 NUM_CLASSES = 5
 CLASS_NAMES = ['F0', 'F1', 'F2', 'F3', 'F4'] # Class names from your dataset folders
 IMAGE_SIZE = 224 # Image size your model expects

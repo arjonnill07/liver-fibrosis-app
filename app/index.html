@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Fibrosis Classification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Liver Fibrosis Stage Classification</h1>
+    <p style="color: red; font-weight: bold;">
+        Disclaimer: This tool is for demonstration/educational purposes ONLY and is NOT a substitute for professional medical diagnosis.
+    </p>
+
+    <div class="upload-section">
+        <label for="imageUpload">Upload CT Image:</label>
+        <input type="file" id="imageUpload" accept="image/png, image/jpeg, image/jpg">
+    </div>
+
+    <div class="preview-section">
+        <img id="imagePreview" src="#" alt="Image Preview"/>
+    </div>
+
+    <button id="predictButton" disabled>Classify Fibrosis Stage</button>
+
+    <div id="resultSection">
+        <h2>Result:</h2>
+        <p id="loading" style="display: none;">Classifying...</p>
+        <p id="predictionResult"></p>
+        <p id="confidenceResult"></p>
+         <h2>Grad-CAM Visualization:</h2>
+        <img id="gradcamImage" src="#" alt="Grad-CAM Heatmap"/>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
