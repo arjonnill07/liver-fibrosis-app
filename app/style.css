@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-section, .preview-section, button, #resultSection {
+    margin-bottom: 15px;
+    text-align: center; /* Center content */
+}
+
+.preview-section img, #gradcamImage {
+    max-width: 300px; /* Limit image sizes */
+    max-height: 300px;
+    margin-top: 10px;
+    border: 1px solid #ccc; /* Add a border */
+}
+
+ #resultSection {
+     border: 1px solid #eee;
+     padding: 15px;
+     margin-top: 20px;
+     min-width: 350px;
+ }
+
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#resultSection h2 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+#predictionResult {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #0056b3; /* Make prediction stand out */
+}
